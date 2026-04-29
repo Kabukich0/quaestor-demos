@@ -20,12 +20,9 @@ If it looks good, post it. Done.
 
 If you want voice narration:
 
-1. Sign up at elevenlabs.io (free tier is fine for one demo).
-2. Get an API key.
-3. `cp .env.example .env` and paste the key in.
-4. Edit `narration/1.5a.txt` if you want to tweak the script.
-5. `pnpm narrate:1.5a` — generates `public/1.5a-narration.wav`.
-6. `pnpm render:1.5a` — Remotion picks up the audio automatically.
+1. Generate narration in your TTS service of choice (ElevenLabs, Murf, Play.HT, or similar — voice quality is significantly better than Edge neural) using the script in `narration/1.5a.txt`. That file is the source of truth — edit it there if you want to change the narration.
+2. Save the output as `public/1.5a-narration.mp3` or `public/1.5a-narration.wav`.
+3. `pnpm render:1.5a` — Remotion picks up the audio automatically.
 
 ## Option 3: Real screen capture (~20 minutes, highest fidelity)
 

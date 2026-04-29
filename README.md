@@ -37,7 +37,7 @@ pnpm render:1.5a
 
 Output: `out/phase-1.5a.mp4`, ~90 seconds, narrated captions, ready for Twitter/X.
 
-If you want narration audio: drop in an `ELEVENLABS_API_KEY` in `.env` and run `pnpm narrate:1.5a` first. Skip it and the video uses captions only.
+If you want narration audio: generate it in any third-party TTS service (ElevenLabs free tier, Murf, Play.HT, or similar — voice quality is significantly better than Edge neural). Save the file as `public/<phase>-narration.mp3` or `.wav`. Then run `pnpm render:<phase>` and the renderer will pick it up automatically.
 
 ## Path B — capture real activity (Phase 1.5b+ workflow)
 
