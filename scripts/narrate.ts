@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 /**
+ * Optional fallback. For higher-quality narration, generate audio in a
+ * third-party TTS service (ElevenLabs / Murf / Play.HT / etc.) using the
+ * script in narration/<phase>.txt and drop the file into
+ * public/<phase>-narration.{mp3,wav} directly — render.ts auto-detects
+ * it. This script is only here for the lazy path.
+ *
  * narrate.ts — Generate narration audio for a phase via Microsoft Edge TTS.
  *
  * Usage:
