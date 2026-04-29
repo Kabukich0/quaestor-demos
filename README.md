@@ -27,6 +27,20 @@ narration/
   1.5a.txt                    Voiceover script for Phase 1.5a
 ```
 
+## Voice
+
+All Quaestor demos use ElevenLabs "Joseff Novak — Calm and Professional"
+with these settings:
+- Model: Eleven v3
+- Stability: 50
+- Similarity boost: 75
+- Speed: 1.01
+
+Voice is locked across phases for brand consistency.
+Source narration scripts live in narration/.
+Generated audio is dropped into public/<phase>-narration.mp3 — never
+committed (gitignored).
+
 ## Path A — render Phase 1.5a today (zero setup)
 
 ```
