@@ -27,16 +27,27 @@ if (!phase) {
 // "1.5a" -> "Phase15a"
 const compositionId = "Phase" + phase.replace(/\./g, "");
 const outFile = `out/phase-${phase}.mp4`;
+
+// Prefer wav (loseless intermediate, smaller composition concat artefacts);
+// fall back to mp3 (Puter.js direct output) before going silent.
 const wavName = `${phase}-narration.wav`;
+const mp3Name = `${phase}-narration.mp3`;
 const wavPath = resolve("public", wavName);
+const mp3Path = resolve("public", mp3Name);
 
 const args = ["exec", "remotion", "render", compositionId, outFile, "--concurrency=1"];
 
-if (existsSync(wavPath)) {
-  console.log(`narration found at public/${wavName} — including audio`);
-  args.push("--props", JSON.stringify({ narrationSrc: wavName }));
+let narrationName: string | undefined;
+if (existsSync(wavPath)) narrationName = wavName;
+else if (existsSync(mp3Path)) narrationName = mp3Name;
+
+if (narrationName) {
+  console.log(`narration found at public/${narrationName} — including audio`);
+  args.push("--props", JSON.stringify({ narrationSrc: narrationName }));
 } else {
-  console.log(`no narration at public/${wavName} — rendering silent (captions only)`);
+  console.log(
+    `no narration at public/${wavName} or public/${mp3Name} — rendering silent (captions only)`,
+  );
   console.log(`tip: run 'pnpm narrate:${phase}' first if you want voiceover`);
 }
 
