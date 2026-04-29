@@ -1,0 +1,11 @@
+Quaestor. Phase X point Y.
+
+[Opening line — what this phase shipped, in one sentence.]
+
+[Setup — the situation before this phase. What was missing or broken.]
+
+[The moment — the actual technical move. Be specific. Use real verbs.]
+
+[The proof — what's now possible that wasn't. A real artifact, ideally.]
+
+[The claim — one sentence that lands. The line that goes on the slide.]

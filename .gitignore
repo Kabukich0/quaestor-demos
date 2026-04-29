@@ -1,0 +1,13 @@
+node_modules/
+out/*.mp4
+out/*.gif
+out/*.cast
+out/*.webm
+public/*.wav
+public/*.mp3
+public/captures/
+.env
+.env.local
+.DS_Store
+*.log
+.remotion/

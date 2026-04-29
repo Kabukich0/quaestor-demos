@@ -1,0 +1,40 @@
+{
+  "name": "quaestor-demos",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "studio": "remotion studio",
+    "render:1.5a": "tsx scripts/render.ts --phase 1.5a",
+    "render:1.5b": "tsx scripts/render.ts --phase 1.5b",
+    "render:2.0": "tsx scripts/render.ts --phase 2.0",
+    "render": "tsx scripts/render.ts",
+    "narrate:1.5a": "tsx scripts/narrate.ts --phase 1.5a",
+    "narrate": "tsx scripts/narrate.ts",
+    "record:terminal": "tsx scripts/record-terminal.ts",
+    "record:browser": "tsx scripts/record-browser.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/bundler": "^4.0.190",
+    "@remotion/cli": "^4.0.190",
+    "@remotion/renderer": "^4.0.190",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.190",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "dotenv": "^16.4.5",
+    "playwright": "^1.48.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,11 @@
+Quaestor. Phase one point five a.
+
+An AI agent presents a mandate — a signed authorization, scoped to an amount, a recipient, and a time window. The agent never holds the user's keys.
+
+Core verifies the mandate, derives a settlement key from its hierarchical-deterministic vault, and signs the payment in process. The signing key never leaves the device.
+
+The bridge wraps the signature and forwards it to the x-four-oh-two facilitator. The bridge holds zero keys. It only relays.
+
+Twelve seconds later, the transfer settles on Base Sepolia. Real on-chain. Verifiable by anyone.
+
+Bridge held zero keys. Quaestor — the only mandate engine that means it.
