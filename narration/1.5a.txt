@@ -1,13 +1,13 @@
-Quaestor. Phase one point five a.
+Quaestor. Phase one point five.
 
-An autonomous agent presents a signed authorization. Scoped to an amount, a recipient, a time window.
+An agent presents a signed authorization — capped, scoped, time-limited.
 
-Core verifies it, derives a fresh settlement key from a hierarchical-deterministic vault, and signs the payment. In process. The key never touches disk.
+Core verifies it. Derives a fresh key. Signs the payment in process. The key never touches disk.
 
-The bridge wraps the signature and forwards. It cannot read the key. It cannot replay the signature. It cannot do anything except relay.
+The bridge wraps the signature and forwards. It cannot read the key. It cannot replay the signature. It can only relay.
 
-Twelve seconds later, settlement on Base Sepolia. Public. Verifiable. Final.
+Twelve seconds later — settlement on Base Sepolia. Public. Verifiable. Final.
 
-This is the boundary every other agent payments stack has to ask you to compromise.
+Every other agent payments stack asks you to give up the keys.
 
-Quaestor doesn't ask.
+Quaestor doesn't.
