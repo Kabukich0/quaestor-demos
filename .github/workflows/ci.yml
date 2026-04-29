@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  typecheck:
+    name: quaestor-demos (Node 22, tsc)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Set up Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile=false
+
+      # Remotion render is intentionally NOT in CI: Chrome download +
+      # ~3 minutes runtime per phase, not worth the cost for a demos
+      # repo that produces video artifacts on demand. Type safety is
+      # all we gate on.
+      - name: Typecheck
+        run: npx tsc --noEmit
