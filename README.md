@@ -1,5 +1,7 @@
 # quaestor-demos
 
+[![CI](https://github.com/Kabukich0/quaestor-demos/actions/workflows/ci.yml/badge.svg)](https://github.com/Kabukich0/quaestor-demos/actions/workflows/ci.yml)
+
 Programmatic demo videos for Quaestor milestones. Two paths:
 
 - **Path A — Remotion only.** Pure code, no external recording. `pnpm render:1.5a` → `out/phase-1.5a.mp4`. No Playwright, no asciinema, no API keys. Ships a usable demo today.
