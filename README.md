@@ -4,6 +4,13 @@
 
 Programmatic demo videos for Quaestor milestones. Two paths:
 
+## Watch
+
+<video src="https://github.com/Kabukich0/quaestor-demos/releases/download/v0.1.5a/phase-1.5a.mp4" controls width="100%"></video>
+
+[Direct link](https://github.com/Kabukich0/quaestor-demos/releases/download/v0.1.5a/phase-1.5a.mp4) · [Release notes](https://github.com/Kabukich0/quaestor-demos/releases/tag/v0.1.5a)
+
+
 - **Path A — Remotion only.** Pure code, no external recording. `pnpm render:1.5a` → `out/phase-1.5a.mp4`. No Playwright, no asciinema, no API keys. Ships a usable demo today.
 - **Path B — Captured pipeline.** Playwright records a real Basescan tour, asciinema records a real terminal session, ElevenLabs generates narration, Remotion stitches everything. Higher fidelity, more setup. Use when you want to show actual on-chain activity instead of the stylized version.
 
