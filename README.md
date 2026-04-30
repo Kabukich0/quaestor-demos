@@ -6,9 +6,9 @@ Programmatic demo videos for Quaestor milestones. Two paths:
 
 ## Watch
 
-<video src="https://github.com/Kabukich0/quaestor-demos/releases/download/v0.1.5a/phase-1.5a.mp4" controls width="100%"></video>
+<video src="https://github.com/Kabukich0/quaestor-demos/releases/download/v0.2.0/phase-2.0.mp4" controls width="100%"></video>
 
-[Direct link](https://github.com/Kabukich0/quaestor-demos/releases/download/v0.1.5a/phase-1.5a.mp4) · [Release notes](https://github.com/Kabukich0/quaestor-demos/releases/tag/v0.1.5a)
+Latest: [v0.2.0 — Local Policy LLM](https://github.com/Kabukich0/quaestor-demos/releases/tag/v0.2.0) · [Phase 1.5a](https://github.com/Kabukich0/quaestor-demos/releases/tag/v0.1.5a)
 
 
 - **Path A — Remotion only.** Pure code, no external recording. `pnpm render:1.5a` → `out/phase-1.5a.mp4`. No Playwright, no asciinema, no API keys. Ships a usable demo today.
