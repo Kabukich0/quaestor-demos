@@ -1,0 +1,15 @@
+Quaestor. Phase two point zero.
+
+Mandates have intent. Plain language. Stored on the user's device only.
+
+Before any payment is signed, a local model — running entirely offline, on your machine — evaluates the redemption against that intent.
+
+Approve. Reject. Soft warn.
+
+In sixty hand-labeled cases, the model caught one hundred percent of obvious violations. Zero false approvals on the hard set.
+
+The model never sees the cloud. The intent never leaves your machine. The audit trail is cryptographically chained.
+
+Every other agent payments stack ships your data to a server.
+
+Quaestor doesn't.
