@@ -8,6 +8,7 @@ import { colors } from "../theme/colors";
 
 // Real Phase 2.0 metrics — from the eval run committed to quaestor-policy.
 // 60 hand-labeled cases, Qwen 2.5 3B Q4_K_M, run on M-series.
+// kept for reference / README metric
 const FALSE_APPROVE_RATE = "0%";
 const FALSE_REJECT_RATE = "5.0%";
 const ACCURACY = "91.7%";
@@ -103,8 +104,8 @@ export const Phase20: React.FC<{ narrationSrc?: string }> = ({ narrationSrc }) =
       <Sequence from={1020} durationInFrames={600}>
         <MetricsPanel
           eyebrow={`EVAL RESULTS / ${TOTAL_CASES} HAND-LABELED CASES`}
-          headline={FALSE_APPROVE_RATE}
-          headlineLabel="FALSE APPROVALS ON HARD REJECTIONS"
+          headline="100%"
+          headlineLabel="VIOLATIONS CAUGHT ON HARD REJECTIONS"
           stats={[
             { value: ACCURACY, label: "OVERALL ACCURACY", accent: "verified" },
             { value: FALSE_REJECT_RATE, label: "FALSE REJECT RATE", accent: "default" },
